@@ -1,0 +1,17 @@
+.update-logo {
+    width: 70px;
+    height: 70px;
+    /* border: 1px solid black; */
+    border-radius: 50%;
+    background-color: rgb(253, 255, 57);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-update-logo h4 {
+    font-size: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, 'Times New Roman', Times, serif;
+    font-weight: 500;
+    line-height: 15px;
+}
