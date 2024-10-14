@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tough</title>
+
+    <link rel="stylesheet" href="9th tough.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+
+</head>
+
+<body>
+
+
+
+
+
+  <div class="header-slider">
+
+    <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" navigation="true" space-between="30"
+    centered-slides="true" autoplay-delay="2500" autoplay-disable-on-interaction="false">
+
+
+
+    <swiper-slide>
+
+      <img src="https://preview.colorlib.com/theme/tough/images/bg_3.jpg" alt="">
+
+    </swiper-slide>
+
+
+
+    <swiper-slide>
+
+      <img src="https://preview.colorlib.com/theme/tough/images/bg_4.jpg" alt="">
+
+    </swiper-slide>
+
+
+
+    <swiper-slide>
+      
+      <img src="https://preview.colorlib.com/theme/tough/images/bg_2.jpg" alt="">
+    
+    </swiper-slide>
+
+
+
+    <swiper-slide>
+
+      <img src="https://preview.colorlib.com/theme/tough/images/bg_1.jpg" alt=""></swiper-slide>
+
+    </swiper-container>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+  
+    <div class="main">
+
+        
+
+        <div class="main-1">
+
+          <div class="main-top">
+
+            <div class="counter" data-speed="1000">800</div>
+
+            <div class="counter" data-speed="1000">750</div>
+
+          </div>
+
+
+
+          <div class="top-left">
+
+            <h2>FINISHED PROJECTS</h2>
+
+          </div>
+
+          <div class="top-right">
+
+            <h2>HAPPY CUSTOMERS</h2>
+
+          </div>
+
+
+
+
+          <div class="main-bottom">
+
+            <div class="counter" data-speed="1000">1200</div>
+
+            <div class="counter" data-speed="1000">850</div>
+
+          </div>
+
+
+
+          <div class="bottom-left">
+
+            <h2>WORKING HOURS</h2>
+
+          </div>
+
+          <div class="main-bottom">
+
+            <h2>CUPS OF COFFEE</h2>
+
+          </div>
+
+
+
+      </div>
+
+
+
+
+
+
+
+      <div class="main-2">  
+
+          <div class="img"> 
+
+              <button>Explore Further</button>  
+
+          </div>  
+          
+      </div>
+
+    </div>
+
+
+
+
+
+    
+    
+</body>
+
+
+
+
+</html>
+
+
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+
+
+
+<script>
+
+$(document).ready(function() {
+
+
+
+
+
+
+(() => {
+    const counter = document.querySelectorAll('.counter');
+    // covert to array
+    const array = Array.from(counter);
+    // select array element
+    array.map((item) => {
+        // data layer
+        let counterInnerText = item.textContent;
+
+        let count = 1;
+        let speed = item.dataset.speed / counterInnerText
+        function counterUp() {
+            item.textContent = count++
+            if (counterInnerText < count) {
+                clearInterval(stop);
+            }
+        }
+        const stop = setInterval(() => {
+            counterUp();
+        }, speed);
+    })
+})()
+
+});
+
+
+
+
+</script>
+
+
+
+
+
+

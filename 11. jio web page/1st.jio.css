@@ -1,0 +1,209 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    -webkit-overflow-scrolling: width="0px" height="0px";
+}
+
+
+
+
+
+
+
+
+
+nav{
+    width: 100%;
+    height: 72px;
+    border: 1px solid black;
+    background-color: rgb(15,60,201);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* position: relative; */
+}
+
+
+.nav-bar{
+    width: 64%;
+    height: 80%;
+    border: 1px solid black;
+    color: black;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* position: relative; */
+}
+
+
+
+
+
+
+.all-link{
+    width: 70%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+.all-link a{
+    padding-left: 50px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.jiji{
+    width: 100%;
+    height: 475px;
+    /* position: absolute; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.wrapper {
+    align-items: center;
+    display: flex;
+    height: 100lvh;
+    justify-content: center;
+    width: 100%;
+}
+
+.carousel {
+    aspect-ratio: 16/9;
+    border-radius: 1rem;
+    display: grid;
+    grid-template-areas: "stack";
+    max-height: 36rem;
+    max-width: 64rem;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.slide {
+    display: block;
+    grid-area: stack;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+    width: 100%;
+}
+
+.slide img {
+    animation: panRight 10s ease-in-out infinite;
+    height: 110%;
+    position: absolute;
+    width: 110%;
+}
+
+@keyframes panUp {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-10%);
+    }
+}
+
+@keyframes panDown {
+    0% {
+        transform: translateY(-10%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes panRight {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-10%);
+    }
+}
+
+@keyframes panLeft {
+    0% {
+        transform: translateX(-10%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
